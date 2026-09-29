@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            /* lagura */ 
+            width: 400px;
+            /* Altura */
+            height: 400px;
+            /* Para unir as linhas entre as celulas */
+            border-collapse: collapse;
+        }
+
+        tr{
+            width: 400px;
+        
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 8px;
+            height: 30px; 
+            /* Alinhamento horizontal 
+                - center - centro
+                - left - esquerda
+                - right - direita
+            */
+
+            text-align: center;
+            /* Alinhamento vertical
+                - top - em cima
+                - bottom - em baixo
+                - middle - no centro
+            */
+            vertical-align: middle;
+        }
+
+        .numero {
+            text-align: right;
+        }
+        .numero2 {
+            text-align: left;
+        }
+
+        .numero3 {
+    vertical-align: top;
+}
+
+        .numero4 {
+    vertical-align: bottom;
+    padding-bottom: 8px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Gabarito - Trabalhando com alinhamento </h1>
+    <!-- É utilzado para criar organização de dados -->
+    <!-- 
+        Hierarquia de tabelas (Simples)
+        Table = tabela
+            Table Row = Linha da tabela
+                Table Header = cabeçalho de tabela Data = dado da tabela Data = dado da tabela
+    -->
+    <table>
+        <tr> <!-- Primeira linha -->
+            <td class="numero2">A1<br>
+            <label>(esquerda)</label>
+            </td>
+            <td>B1<br>
+            <label>(padrão centro)</label>
+            </td>
+            <td class="numero">C1<br>
+            <label>(baixo)</label>
+            </td>
+        </tr> <!-- Segunda linha -->
+        <tr class="linha">
+            <td class="numero3">A2<br>
+            <label>(topo)</label>
+            </td>
+            <td>B2<br>
+            <label>(padrão)</label>
+            </td>
+            <td class="numero4">C2<br>
+            <label>(baixo)</label>
+            </td>
+        </tr>
+        <tr> <!-- Terceira linha -->
+            <td class="numero3">A3<br>
+            <label>(topo)</label>
+            </td>
+            <td class="numero4">B3<br>
+            <label>(baixo)</label>
+            </td>
+            <td>C3<br>
+            <label>(padrão)</label>
+            </td>
+        </tr>
+        <tr> <!-- Quarta linha -->
+            <td>A4</td>
+            <td class="numero">
+                1000<br>
+                <label>(número à direita)</label>
+            </td>
+            <td>C4</td>
+        </tr>
+
+    </table>
+    
+</body>
+</html>
